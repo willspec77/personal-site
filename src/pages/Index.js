@@ -1,40 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
 const Index = () => (
   <Main
     description={
-      "Michael D'Angelo's personal website. New York based Stanford ICME graduate, "
-      + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
+      // eslint-disable-next-line operator-linebreak
+      "William Spector's personal website. New York based Stanford ICME graduate, " +
+      'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
     }
   >
     <article className="post" id="index">
       <header>
         <div className="title">
-          <h2>
-            <Link to="/">About this site</Link>
-          </h2>
-          <p>
-            A beautiful, responsive, statically-generated, react application
-            written with modern Javascript.
-          </p>
+          <h2>CERTIFICATION</h2>
+          <p>AWS Certified DevOps Engineer – Professional</p>
+          <p>Certified Kubernetes Administrator (CKA)</p>
+          <p>HashiCorp Certified: Terraform Associate</p>{' '}
+          <p>Docker Certified Associate</p>
         </div>
       </header>
-      <p>
-        {' '}
-        Welcome to my website. Please feel free to read more{' '}
-        <Link to="/about">about me</Link>, or you can check out my{' '}
-        <Link to="/resume">resume</Link>, <Link to="/projects">projects</Link>,{' '}
-        view <Link to="/stats">site statistics</Link>, or{' '}
-        <Link to="/contact">contact</Link> me.
-      </p>
-      <p>
-        {' '}
-        Source available{' '}
-        <a href="https://github.com/mldangelo/personal-site">here</a>.
-      </p>
+      <div>
+        <h2>PROFESSIONAL AFFILIATIONS</h2>
+        <p>Member, DevOps Institute</p>
+        <p>Contributor, CNCF (Cloud Native Computing Foundation)</p>
+      </div>
     </article>
   </Main>
 );
